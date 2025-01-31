@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packora</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="yatra-one-regular">Your Packing List</h1>
+        <ul>
+            {% for item in packing_list %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+        <button>
+            <span><a href="/">Plan another trip</a></span>
+        </button>
+    </div>
+</body>
+</html>
